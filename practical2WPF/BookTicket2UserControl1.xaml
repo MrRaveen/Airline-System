@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="practical2WPF.BookTicket2UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:practical2WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="White" Loaded="UserControl_Loaded">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="27" Margin="10,10,0,0" VerticalAlignment="Top" Width="282">
+            <TextBlock  HorizontalAlignment="Left" Height="27" Margin="10,0,0,0" TextWrapping="Wrap" Text="Business Class (B1)" Width="208" FontFamily="Nirmala UI" FontSize="16" FontWeight="Bold"/>
+        </StackPanel>
+        <!--StackPanel HorizontalAlignment="Left" Height="56" Margin="476,5,0,0" VerticalAlignment="Top" Width="246">
+            <Label Content="Community Class (C1)" HorizontalAlignment="Left" Height="44" Margin="10,0,0,0" Width="199" FontFamily="Nirmala UI" FontSize="16" FontWeight="Bold"/>
+        </StackPanel-->
+        <StackPanel HorizontalAlignment="Left" Height="271" Margin="18,42,0,0" VerticalAlignment="Top" Width="194">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="274" VerticalAlignment="Top" Width="198" Margin="-2,0,-3,0">
+                <Border.Background>
+                    <ImageBrush ImageSource="/Images/B1.jpg"/>
+                </Border.Background>
+            </Border>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="112" Margin="18,318,0,0" VerticalAlignment="Top" Width="247">
+            <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="110" VerticalAlignment="Top" Width="238">
+                <Border.Background>
+                    <ImageBrush ImageSource="/Images/B12.jpg"/>
+                </Border.Background>
+            </Border>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="112" Margin="248,66,0,0" VerticalAlignment="Top" Width="482">
+            <TextBlock HorizontalAlignment="Left" Height="107" Margin="10,0,0,0" TextWrapping="Wrap" Text="Business class in airlines offers a premium travel experience that bridges the gap between the luxurious first class and the more economical coach class.Business class is designed to provide a seamless and luxurious travel experience, combining the comforts of home with the exclusivity of premium services. Whether you're traveling for business or pleasure, business class ensures that your journey is as enjoyable as the destination." Width="443" FontFamily="Nirmala UI" TextAlignment="Justify"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="37" Margin="248,29,0,0" VerticalAlignment="Top" Width="255">
+            <TextBlock HorizontalAlignment="Left" Height="31" Margin="10,0,0,0" TextWrapping="Wrap" Text="Description" Width="203" FontFamily="Nirmala UI" FontWeight="Bold" FontSize="18"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="36" Margin="257,285,0,0" VerticalAlignment="Top" Width="255">
+            <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,0,0,0" TextWrapping="Wrap" Text="You wll be get, " Width="226" FontFamily="Nirmala UI" FontWeight="Bold" FontSize="18"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="104" Margin="270,326,0,0" VerticalAlignment="Top" Width="473">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="463" Height="101" Text="Enhanced Comfort - Seats in business class are spacious and can often recline into flat beds, providing a comfortable environment for rest and relaxation during the flight.
+                         Superior Service - Passengers receive attentive service from the airline staff, with a focus on ensuring a pleasant and personalized flight experience.
+                                                        Exclusive Amenities - Amenities such as premium headphones, luxury amenity kits, and a wide range of entertainment options are provided to enhance the journey"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="112" Margin="248,183,0,0" VerticalAlignment="Top" Width="482">
+            <TextBlock HorizontalAlignment="Left" Height="107" Margin="10,0,0,0" TextWrapping="Wrap" Text="but many airlines now offer business class as the highest level of service, having eliminated first class seating.[1] Business class is distinguished from other travel classes by the quality of seating, food, drinks, ground service and other amenities. In commercial aviation, full business class is usually denoted 'J' or 'C' with schedule flexibility, but can be many other letters depending on circumstances." Width="443" FontFamily="Nirmala UI" TextAlignment="Justify"/>
+        </StackPanel>
+        <Border BorderBrush="Transparent" BorderThickness="1" HorizontalAlignment="Left" Height="122" Margin="18,435,0,-107" VerticalAlignment="Top" Width="247">
+            <Border.Background>
+                <ImageBrush ImageSource="/Images/B13.jpg">
+                </ImageBrush>
+            </Border.Background>
+        </Border>
+        <StackPanel HorizontalAlignment="Left" Height="53" Margin="292,440,0,-43" VerticalAlignment="Top" Width="238">
+            <TextBlock Foreground="Black" FontSize="15" FontFamily="Nirmala UI" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="168"/>
+            <TextBox IsReadOnly="True" Name="box1" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="53" Margin="292,504,0,-107" VerticalAlignment="Top" Width="238">
+            <TextBlock Foreground="Black" FontSize="15" FontFamily="Nirmala UI" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="Total" VerticalAlignment="Top" Width="168"/>
+            <TextBox IsReadOnly="True" Name="box2" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="43" Margin="530,450,0,-43" VerticalAlignment="Top" Width="230">
+            <Button Background="Indigo" Foreground="White" FontFamily="Nirmala UI" Content="Book Now" HorizontalAlignment="Left" Height="40" Margin="10,0,0,0" Width="190" Click="Button_Click_1"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="53" Margin="530,504,0,-107" VerticalAlignment="Top" Width="200">
+            <Button Background="Indigo" Foreground="White" FontFamily="Nirmala UI" Content="Check Community class" HorizontalAlignment="Left" Height="36" Margin="10,0,0,0" Width="190" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+
+</UserControl>

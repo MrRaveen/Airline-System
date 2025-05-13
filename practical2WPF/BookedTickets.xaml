@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="practical2WPF.BookedTickets"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:practical2WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="White" Loaded="UserControl_Loaded">
+    <Border>
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/plane2.jpg"/>
+
+        </Border.Background>
+        <Grid>
+            <StackPanel HorizontalAlignment="Left" Height="48" Margin="10,10,0,0" VerticalAlignment="Top" Width="267">
+                <Label Foreground="White" Content="Booked Tickets" HorizontalAlignment="Left" Height="44" Margin="10,0,0,0" Width="247" FontFamily="Nirmala UI Semilight" FontSize="22"/>
+            </StackPanel>
+            <DataGrid Name="gridBooked" AutoGenerateColumns="False" SelectionChanged="GridBooked_SelectionChanged" HorizontalAlignment="Left" Height="387" Margin="25,63,0,0" VerticalAlignment="Top" Width="593">
+                <DataGrid.Columns>
+                    <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding TicketID}" Header="Ticket ID"/>
+                    <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding FlightNo}" Header="Flight No"/>
+                    <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding Class}" Header="Class"/>
+                    <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding Package}" Header="Package"/>
+                    <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding PriceTot}" Header="Total Price"/>
+                    <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding Passengers}" Header="Passengers"/>
+                    <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding ClassPrice}" Header="Class Price"/>
+                    <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding Fname}" Header="Flight Name"/>
+                    <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding CardType}" Header="Card Type"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel HorizontalAlignment="Left" Height="41" Margin="25,455,0,-46" VerticalAlignment="Top" Width="179">
+                <Label FontSize="14" FontFamily="Nirmala UI" Foreground="Black" Content="Find more about flight" HorizontalAlignment="Left" Height="31" Width="169"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="33" Margin="25,511,0,-94" VerticalAlignment="Top" Width="219">
+                <TextBox Name="box1" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" Width="219"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="28" Margin="25,478,0,-56" VerticalAlignment="Top" Width="204">
+                <Label Content="Flight Number" HorizontalAlignment="Left" Height="26" Width="164"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="27" Margin="25,549,0,-126" VerticalAlignment="Top" Width="129">
+                <Button Foreground="White" Background="Indigo" Content="Proceed" Height="22" Click="Button_Click"/>
+            </StackPanel>
+            <!--DataGrid Name="GridBooked2" HorizontalAlignment="Left" Height="387" Margin="322,63,0,0" VerticalAlignment="Top" Width="434">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding DateAvailable}" Header="Date Available"/>
+                <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding Destination}" Header="Destination"/>
+                <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding DepatureLocation}" Header="Departure Location"/>
+                <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding DepTime}" Header="Departure Time"/>
+                <DataGridTextColumn IsReadOnly="True" CanUserResize="False" Binding="{Binding arrivalTime}" Header="Arrival Time"/>
+            </DataGrid.Columns>
+        </-->
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BAAB82C-BDE5-49D4-9C34-409B5BF2C5EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>practical2WPF</RootNamespace>
+    <AssemblyName>practical2WPF</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AdminWindow.xaml.cs">
+      <DependentUpon>AdminWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AllFlights1.xaml.cs">
+      <DependentUpon>AllFlights1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BookedTickets.xaml.cs">
+      <DependentUpon>BookedTickets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BookNew.xaml.cs">
+      <DependentUpon>BookNew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BookTicket2UserControl1.xaml.cs">
+      <DependentUpon>BookTicket2UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommunityClass.xaml.cs">
+      <DependentUpon>CommunityClass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInfoPicker.xaml.cs">
+      <DependentUpon>CustomerInfoPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CusView.xaml.cs">
+      <DependentUpon>CusView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataGrid.xaml.cs">
+      <DependentUpon>DataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorMessage.xaml.cs">
+      <DependentUpon>ErrorMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorWindow2.xaml.cs">
+      <DependentUpon>ErrorWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorWindow3.xaml.cs">
+      <DependentUpon>ErrorWindow3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Explore.xaml.cs">
+      <DependentUpon>Explore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureEditor.xaml.cs">
+      <DependentUpon>FeatureEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlightEnter.xaml.cs">
+      <DependentUpon>FlightEnter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="History1.xaml.cs">
+      <DependentUpon>History1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MeBox.xaml.cs">
+      <DependentUpon>MeBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MoreInfo.xaml.cs">
+      <DependentUpon>MoreInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PackagePicker.xaml.cs">
+      <DependentUpon>PackagePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PackagePickerBusiness.xaml.cs">
+      <DependentUpon>PackagePickerBusiness.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentPart.xaml.cs">
+      <DependentUpon>PaymentPart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnFlight.xaml.cs">
+      <DependentUpon>ReturnFlight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.xaml.cs">
+      <DependentUpon>SignUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TicketFinderAdmin.xaml.cs">
+      <DependentUpon>TicketFinderAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TotalBill.xaml.cs">
+      <DependentUpon>TotalBill.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ActivityViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Page Include="AdminWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllFlights1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BookedTickets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BookNew.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BookTicket2UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommunityClass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomerInfoPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CusView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ErrorMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ErrorWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ErrorWindow3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Explore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlightEnter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="History1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MeBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MoreInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PackagePicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PackagePickerBusiness.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaymentPart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReturnFlight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TicketFinderAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TotalBill.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\backGround1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UserIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pexels-pixabay-358319.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\plane2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\C1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\B1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\B12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\B13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\C12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\plane3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\plane4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\plane5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\card1.jpg" />
+    <Resource Include="Images\card2.jpg" />
+    <Resource Include="Images\card3.jpg" />
+    <Resource Include="Images\card4.jpg" />
+    <Resource Include="Images\card5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UI2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UI3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UI4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UI5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UI6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UI7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cmw1.jpeg" />
+    <Resource Include="Images\cmw2.jpeg" />
+    <Resource Include="Images\kkk4.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

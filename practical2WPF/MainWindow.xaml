@@ -1,0 +1,131 @@
+﻿<Window x:Class="practical2WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practical2WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border CornerRadius="12">
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/cmw2.jpeg"/>
+        </Border.Background>
+        <Border CornerRadius="12"   
+            BorderThickness="5" Opacity="0.91" >
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#462AD8" Offset="0"/>
+                    <GradientStop Color="#DA34AE" Offset="0.75"/>
+                    <GradientStop Color="#8A16C1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#060531" Offset="0"/>
+                    <GradientStop Color="#1B144B" Offset="0.90"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Name="btnMini" BorderThickness="0" Content="-" Foreground="White" FontSize="16" FontFamily="Montserrat" Cursor="Hand" Grid.Column="1" Click="BtnMini_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="DimGray"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="DarkBlue"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18" CornerRadius="9" Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Name="btnMax" Background="Red"  BorderThickness="0" Content="x" Foreground="White" FontSize="12" FontFamily="Montserrat" Cursor="Hand" Grid.Column="2" Click="BtnMax_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18" CornerRadius="9" Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+                <TextBlock HorizontalAlignment="Left" Height="40" Margin="10,2,0,0" TextWrapping="Wrap" Text="Log In" VerticalAlignment="Top" Width="104" FontSize="14" FontWeight="Bold" Foreground="#FFEADCDC" Grid.RowSpan="2"/>
+                <StackPanel Orientation="Vertical" Margin="162,10,186,0" Grid.RowSpan="2" >
+                    <TextBlock HorizontalAlignment="Center" Height="76" Margin="77,2,69,0" TextWrapping="Wrap" Text="Welcome to Cytrus Airlines" VerticalAlignment="Center" Width="296" FontSize="24" FontWeight="Bold" Foreground="#FFEADCDC" TextAlignment="Center" FontFamily="Nirmala UI"/>
+                    <TextBlock HorizontalAlignment="Center" Height="49" Margin="98,2,91,0" TextWrapping="Wrap" Text="Most trusted airline by millions" VerticalAlignment="Center" Width="253" FontSize="16" FontWeight="Bold" Foreground="#FFEADCDC" TextAlignment="Center" FontFamily="Segoe UI Semibold"/>
+                    <TextBlock HorizontalAlignment="Center" Height="29" Margin="110,2,252,0" TextWrapping="Wrap" Text="User Name" VerticalAlignment="Center" Width="80" FontSize="16" Foreground="#FFEADCDC" TextAlignment="Center" FontFamily="Franklin Gothic Demi"/>
+                    <TextBox x:Name="box1" Background="Transparent" Foreground="White" BorderBrush="LightGray" BorderThickness="0,0,0,1" HorizontalAlignment="Left" Height="24" Margin="114,0,0,0" TextWrapping="Wrap" Text="" Width="223"/>
+                    <TextBlock HorizontalAlignment="Left" Height="57" Margin="52,0,0,0" TextWrapping="Wrap" Text="" Width="102"/>
+
+                </StackPanel>
+                <TextBlock HorizontalAlignment="Left" Foreground="#FFEADCDC" Height="25" Margin="274,195,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="129" FontSize="16" FontFamily="Franklin Gothic Demi" FontWeight="Bold"/>
+                <PasswordBox HorizontalAlignment="Left" Name="box2" Background="Transparent" Foreground="White" BorderBrush="LightGray" BorderThickness="0,0,0,1" Height="28" Margin="272,225,0,0" Grid.Row="1" VerticalAlignment="Top" Width="230"/>
+                <Button Name="logbtn" Content="User LogIn" BorderThickness="0" Foreground="White" FontSize="16" Cursor="Hand" HorizontalAlignment="Left" Height="33" Margin="231,297,0,0" Grid.Row="1" VerticalAlignment="Top" Width="138" Click="Logbtn_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Indigo"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Blue"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="30" CornerRadius="6" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Label Content="" Name="lbl1" Foreground="White" FontSize="15" HorizontalAlignment="Left" Height="36" Margin="524,154,0,0" Grid.Row="1" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.5,0.514"/>
+                <Label Content="" Name="lbl2" FontSize="15" Foreground="White" HorizontalAlignment="Left" Height="41" Margin="524,231,0,0" Grid.Row="1" VerticalAlignment="Top" Width="213"/>
+                <Button Name="adbtn" Content="Admin" BorderThickness="0" Foreground="White" FontSize="16" Cursor="Hand" HorizontalAlignment="Left" Height="33" Margin="408,297,0,0" Grid.Row="1" VerticalAlignment="Top" Width="138" Click="Adbtn_Click_1">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Indigo"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Blue"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="30" CornerRadius="6" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <TextBlock Foreground="White" HorizontalAlignment="Left" Height="31" Margin="350,347,0,0" Grid.Row="1" TextWrapping="Wrap" Text="New to Cytrus? " VerticalAlignment="Top" Width="98"/>
+                <Label MouseDoubleClick="Label_MouseDoubleClick"  Content="Double Click here to Sign Up" Foreground="Red" HorizontalAlignment="Left" Height="31" Margin="305,366,0,0" Grid.Row="1" VerticalAlignment="Top" Width="171"/>
+
+            </Grid>
+        </Border>
+    </Border>
+</Window>

@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="practical2WPF.PackagePickerBusiness"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:practical2WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="470" Margin="48,46,0,-66" VerticalAlignment="Top" Width="199">
+            <Label Content="Platinum Package" HorizontalAlignment="Left" Height="51" Margin="10,0,0,0" Width="179" FontFamily="Nirmala UI" FontWeight="Bold" FontSize="16"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="135" Margin="10,0,0,0" Width="179">
+                <Border.Background>
+                    <ImageBrush ImageSource="Images/plane4.jpg"/>
+                </Border.Background>
+            </Border>
+            <StackPanel HorizontalAlignment="Left" Height="188" Margin="10,0,0,0" Width="179">
+                <TextBox Name="box1" HorizontalAlignment="Left" Height="118" TextWrapping="Wrap" Text="Standard seating with limited legroom Basic meal and beverage service (on longer flights) Access to in-flight entertainment  Carry-on baggage allowance Option to purchase additional services  Ideal For: Budget travelers, students, and individuals looking for the most cost-effective way to fly." Width="179"/>
+                <TextBlock HorizontalAlignment="Left" Height="21" Margin="19,0,0,0" TextWrapping="Wrap" Text="Price" Width="134" TextAlignment="Center" FontFamily="Impact" FontSize="16"/>
+                <TextBlock HorizontalAlignment="Left" Height="44" Margin="38,0,0,0" TextWrapping="Wrap" Text="750$" Width="97" TextAlignment="Center" FontFamily="Impact" FontSize="16"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="50" Margin="10,0,0,0" Width="179">
+                <Button FontFamily="Nirmala UI" FontSize="14" Foreground="White" Background="Indigo" Content="Select" HorizontalAlignment="Left" Height="46" Width="179" Click="Button_Click_1"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="470" Margin="288,46,0,-66" VerticalAlignment="Top" Width="199">
+            <Label Content="Gold Package" HorizontalAlignment="Left" Height="51" Margin="10,0,0,0" Width="179" FontFamily="Nirmala UI" FontWeight="Bold" FontSize="16"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="135" Margin="10,0,0,0" Width="179">
+                <Border.Background>
+                    <ImageBrush ImageSource="Images/plane3.jpg"/>
+                </Border.Background>
+            </Border>
+            <StackPanel HorizontalAlignment="Left" Height="188" Margin="10,0,0,0" Width="179">
+                <TextBox Name="box2" HorizontalAlignment="Left" Height="117" TextWrapping="Wrap" Text="Enhanced seating with more legroom and recline Improved meal and beverage service Priority boarding and check-in Increased baggage allowance Access to power outlets and extra amenities" Width="179"/>
+                <TextBlock HorizontalAlignment="Left" Height="21" Margin="19,0,0,0" TextWrapping="Wrap" Text="Price" Width="134" TextAlignment="Center" FontFamily="Impact" FontSize="16"/>
+                <TextBlock HorizontalAlignment="Left" Height="44" Margin="38,0,0,0" TextWrapping="Wrap" Text="900$" Width="97" TextAlignment="Center" FontFamily="Impact" FontSize="16"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="47" Width="189">
+                <Button Foreground="White" Background="Indigo" FontFamily="Nirmala UI" FontSize="14" Content="Select" HorizontalAlignment="Left" Height="47" Width="179" Margin="10,0,0,0" Click="Button_Click_2"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="470" Margin="535,46,0,-66" VerticalAlignment="Top" Width="199">
+            <Label Content="Luxury Package" HorizontalAlignment="Left" Height="51" Margin="10,0,0,0" Width="179" FontFamily="Nirmala UI" FontWeight="Bold" FontSize="16"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="135" Margin="10,0,0,0" Width="179">
+                <Border.Background>
+                    <ImageBrush ImageSource="Images/plane5.jpg"/>
+                </Border.Background>
+            </Border>
+            <StackPanel HorizontalAlignment="Left" Height="188" Margin="10,0,0,0" Width="179">
+                <TextBox Name="box3" HorizontalAlignment="Left" Height="117" TextWrapping="Wrap" Text="Description: Business Class provides a high level of comfort, service, and convenience. Spacious seating, often with lie-flat seats Gourmet meals and a wide selection of beverages " Width="179"/>
+                <TextBlock HorizontalAlignment="Left" Height="21" Margin="19,0,0,0" TextWrapping="Wrap" Text="Price" Width="134" TextAlignment="Center" FontFamily="Impact" FontSize="16"/>
+                <TextBlock HorizontalAlignment="Left" Height="44" Margin="38,0,0,0" TextWrapping="Wrap" Text="5000$" Width="97" TextAlignment="Center" FontFamily="Impact" FontSize="16"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="51" Width="189">
+                <Button Foreground="White" Background="Indigo" FontFamily="Nirmala UI" FontSize="14" Content="Select" HorizontalAlignment="Left" Height="50" Width="179" Margin="10,0,0,0" Click="Button_Click_3"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="38" Margin="48,8,0,0" VerticalAlignment="Top" Width="335">
+            <Label Content="Package Selector" HorizontalAlignment="Left" Height="37" Width="297" FontFamily="Nirmala UI Semilight" FontSize="18"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Width="189" Margin="296,504,0,-97">
+            <Button FontFamily="Nrimala UI" FontSize="15" Background="BlueViolet" Foreground="White" Content="Set new destination" HorizontalAlignment="Left" Height="48" Margin="10,0,0,0" Width="169" Click="Button_Click"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

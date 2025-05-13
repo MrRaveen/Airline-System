@@ -1,0 +1,24 @@
+﻿<Window x:Class="practical2WPF.ErrorMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practical2WPF"
+        mc:Ignorable="d"
+        Title="ErrorMessage" Height="200" Width="1000" WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" Background="LightGray">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="63" Margin="10,10,0,0" VerticalAlignment="Top" Width="328">
+            <Label Content="Warnning" HorizontalAlignment="Left" Height="42" Width="328" FontFamily="Segoe UI Historic" FontSize="20"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="63" Margin="10,65,0,0" VerticalAlignment="Top" Width="472">
+            <Label Content="Are you sure to exit?" HorizontalAlignment="Left" Height="58" Width="472" FontFamily="Nirmala UI" FontWeight="Bold" FontSize="36"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="105" Margin="725,65,0,0" VerticalAlignment="Top" Width="236">
+            <Button Background="Green" Foreground="White" Content="Yes" HorizontalAlignment="Left" Height="51" Width="236" FontSize="16" FontWeight="Bold" Click="Button_Click"/>
+            <Button Foreground="White" Background="Red" Content="No" HorizontalAlignment="Left" Height="51" Width="236" FontSize="16" FontWeight="Bold" Click="Button_Click_1"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
